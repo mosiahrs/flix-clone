@@ -12,6 +12,10 @@ body {
     color: white;
 
 }
+.container {
+    margin-left: 10px;
+}
+
 header .container{
     display: flex;
     align-items: center;
@@ -20,19 +24,20 @@ header .container{
     
 }
 .logo{
-    color: white;
-    padding: 10px;
-    font-family: Arial;
-    font-weight: bolder;
-    font-size: 1.2rem;
+  color: white;
+  padding: 10px;
+  font-family: 'Orelega One', cursive;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
+
 .logo span{
     color: #34ebb4;
 }
 
 .search-bar input{
     margin-left: 8px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) .100%);
     border: 1px solid transparent;
     height: 1.6rem;
     padding-left: 4px;
@@ -45,7 +50,7 @@ header nav a{
     text-decoration: none;
     color:white;
     margin-right: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Orelega One', cursive;
 }
 
 header nav a:hover{
@@ -54,9 +59,14 @@ header nav a:hover{
 
 /* Filme principal */
 
+.main-movie .container{
+    width: 70%;
+   
+}
+
 .main-movie {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/resources/capa.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(25, 25, 24, 0.5) .100%), url("owl/capa.jpg");
     background-size: cover;
     height: 400px;
     display: flex;
@@ -67,10 +77,11 @@ header nav a:hover{
 }
 
 .sinopse{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 10px;
     width: 80%;
-        
+    text-align: justify;
+   
 }
 
 .titulo{
@@ -82,38 +93,45 @@ header nav a:hover{
 
 .botao{
     background-color: rgba(0,0,0,.50);
-    border: none;
-    color: white;
-    
+    border: 1px solid transparent;
+    color: #34ebb4   ;
+    border-radius: 5%;
+
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
     
     cursor: pointer;
-    transition: 1s ease all;
+    transition: 0.6s ease all;
     text-decoration: none;
 }
 
 .botao:hover{
-    background-color: gray;
+    background-color: white;
     color: #34ebb4;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .botao i{
     margin-right: 8px;
 }
 
-.container {
-    margin-left: 10px;
-}
-
-.main-movie .container{
-    width: 70%;
-}
-
 .carrosel-filmes {
-    margin-top: 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(25, 25, 24, 0.5) .100%);
+    opacity: 0.8;
+}
+
+.carrosel-filmes h2 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.footer{
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(25, 25, 24, 0.5) .80%);
+    text-align: center;
 }
 
 

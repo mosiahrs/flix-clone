@@ -2,18 +2,37 @@
     header .container{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
     }
 
     .botao{
         margin-top: 5px;
-        width: 300px;
+        width: 280px;
     }
     .search-bar input{
         margin-bottom: 10px;
         margin-top: 5px;
     }
+    .titulo{
+        margin-top: 5px;
+        font-size: -10%;
+    }
 
 }
+@media screen and (max-width:590px){
+    .sinopse{
+        font-size: medium;
+    }
+
+    .sinopse2{
+        display: none;
+    }
+    .titulo{
+       font-size: 24px;
+    }
+}
+
 
 @media screen and (min-width:1000px){
     .descricao{
